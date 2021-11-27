@@ -94,6 +94,7 @@
                 style="@style/formularioTitlesText"/>
 
             <RadioGroup
+                android:id="@+id/opcoes_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -110,25 +111,28 @@
 />
 
                 <RadioButton
+                    android:id="@+id/casado_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Casado"
                     style="@style/formularioTitlesText"
-                    android:buttonTint="@color/pink" />
+                    android:buttonTint="@color/black" />
 
                 <RadioButton
+                    android:id="@+id/separado_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Separado"
                     style="@style/formularioTitlesText"
-                    android:buttonTint="@color/pink" />
+                    android:buttonTint="@color/black" />
 
                 <RadioButton
+                    android:id="@+id/divorciado_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Divorciado"
                     style="@style/formularioTitlesText"
-                    android:buttonTint="@color/pink"
+                    android:buttonTint="@color/black"
                     />
 
             </RadioGroup>
@@ -147,6 +151,8 @@
             style="@style/formularioTitlesText"/>
 
         <EditText
+            android:id="@+id/mensagem_field"
+
             android:layout_width="match_parent"
             android:layout_height="170dp"
 

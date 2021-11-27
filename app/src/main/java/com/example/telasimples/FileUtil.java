@@ -3,12 +3,14 @@ package com.example.telasimples;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Environment;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -64,7 +66,12 @@ public class FileUtil {
         return bitmap;
     }
 
-    //public static void gravar
+    /*@NonNull
+    public static File criarArquivoLocalmente(@NonNull String nomeArquivo){
+        String raiz = Environment.getExternalStorageDirectory() + File.separator;
+        String diretorio =
+
+    }*/
 
 
 }

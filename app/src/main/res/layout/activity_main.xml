@@ -72,9 +72,9 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
 
-                        app:cardBackgroundColor="#A02B48"
-                        android:elevation="0dp"
-                        app:cardCornerRadius="90dp">
+                        android:backgroundTint="#A02B48"
+                        app:cardCornerRadius="24dp">
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -145,7 +145,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
 
-                        app:cardCornerRadius="90dp"
+                        app:cardCornerRadius="24dp"
                         android:backgroundTint="#2BA099"
                         android:elevation="0dp"
 
@@ -258,7 +258,7 @@
                         android:elevation="0dp"
 
                         android:backgroundTint="#74A02B"
-                        app:cardCornerRadius="90dp">
+                        app:cardCornerRadius="24dp">
 
                         <TextView
                             android:layout_width="wrap_content"
