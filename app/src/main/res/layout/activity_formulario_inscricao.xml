@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formularioInscricao"
+    android:background="#F5F5F5">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:background="#C62828"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Formulário de Inscrição"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+
+        android:paddingHorizontal="12dp"
+        android:paddingTop="24dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="top"
+
+                android:text="Nome\nCompleto:"
+                style="@style/formularioTitlesText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:textColor="#3A3A3A"
+                android:layout_marginStart="26dp"
+                android:backgroundTint="@color/pink"
+                android:lines="1"
+                android:imeOptions="actionDone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="top"
+
+                android:text="Estado Civil:"
+                style="@style/formularioTitlesText"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="31dp"
+                android:checkedButton="@id/solteiro_radio">
+
+                <RadioButton
+                    android:id="@+id/solteiro_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solteiro"
+                    style="@style/formularioTitlesText"
+                    android:buttonTint="@color/pink"
+/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casado"
+                    style="@style/formularioTitlesText"
+                    android:buttonTint="@color/pink" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Separado"
+                    style="@style/formularioTitlesText"
+                    android:buttonTint="@color/pink" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Divorciado"
+                    style="@style/formularioTitlesText"
+                    android:buttonTint="@color/pink"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="top"
+
+            android:text="Mensagem:"
+            style="@style/formularioTitlesText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+
+            android:hint="Digite uma mensagem..."
+            android:textColorHint="#656565"
+            android:gravity="top"
+            android:backgroundTint="@color/pink"
+            android:textColor="#3A3A3A"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+
+        app:fabCustomSize="64dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+
+
+        android:backgroundTint="@color/pink"
+        app:tint="@android:color/white"
+        android:src="@drawable/ic_outline_save_24"
+        android:elevation="200dp"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
